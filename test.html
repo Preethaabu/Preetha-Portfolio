@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto:900");
+/**
+  * style variables
+*/
+/**
+  * Control & indicator mixin
+*/
+.carousel__activator:nth-of-type(1):checked ~ .carousel__track[name="carousel3"] {
+  transform: translateX(0%);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1)[name="carousel3"] {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1)[name="carousel3"] {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1)[name="carousel3"] {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__track[name="carousel3"] {
+  transform: translateX(-100%);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2)[name="carousel3"] {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2)[name="carousel3"] {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2)[name="carousel3"] {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__track[name="carousel3"] {
+  transform: translateX(-200%);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3)[name="carousel3"] {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3)[name="carousel3"] {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3)[name="carousel3"] {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__track[name="carousel3"] {
+  transform: translateX(-300%);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4)[name="carousel3"] {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4)[name="carousel3"] {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4)[name="carousel3"] {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__track[name="carousel3"] {
+  transform: translateX(-400%);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5)[name="carousel3"] {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5)[name="carousel3"] {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5)[name="carousel3"] {
+  opacity: 1;
+}
+
+/*  */
+.carousel__track .carousel__slide:nth-of-type(1)[name="carousel3"] {
+  transform: translateX(0%);
+}
+.carousel__track .carousel__slide:nth-of-type(2)[name="carousel3"] {
+  transform: translateX(100%);
+}
+.carousel__track .carousel__slide:nth-of-type(3)[name="carousel3"]{
+  transform: translateX(200%);
+}
+.carousel__track .carousel__slide:nth-of-type(4)[name="carousel3"] {
+  transform: translateX(300%);
+}
+.carousel__track .carousel__slide:nth-of-type(5)[name="carousel3"] {
+  transform: translateX(400%);
+}
+.carousel--scale .carousel__slide[name="carousel3"] {
+  transform: scale(0);
+}
+
+/*  */
+
+.carousel__slide:nth-of-type(1)[name="carousel3"],
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1)[name="carousel3"] {
+    background-image: url("../project_imgs/Product_flow.png");
+    background-size: 90% auto; /* Adjust the percentage as needed */
+    background-repeat: no-repeat; 
+    height: 100%;
+    width: 100%;
+    background-position: center;
+} 
+.carousel__slide:nth-of-type(2)[name="carousel3"],
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2)[name="carousel3"]{
+  background-image: url("../project_imgs/1_out_of_stock.jpg");
+  background-size: 90% auto; /* Adjust the percentage as needed */
+  background-repeat: no-repeat; 
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+.carousel__slide:nth-of-type(3)[name="carousel3"],
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3)[name="carousel3"] {
+    background-image: url("../project_imgs/2_dwell_time_analysis.jpg");
+    background-size: 90% auto; /* Adjust the percentage as needed */
+    background-repeat: no-repeat; 
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+.carousel__slide:nth-of-type(4)[name="carousel3"],
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4)[name="carousel3"] {
+    background-image: url("../project_imgs/3_basket_analysis.jpg");
+  background-size: 90% auto; /* Adjust the percentage as needed */
+  background-repeat: no-repeat; 
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+.carousel__slide:nth-of-type(5)[name="carousel3"],
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5)[name="carousel3"] {
+    background-image: url("../project_imgs/4_heatmap_analysis.jpg");
+    background-size: 90% auto; /* Adjust the percentage as needed */
+    background-repeat: no-repeat; 
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+    </style>
+</head>
+<body>
+
+  <div class="carousel_wrap">
+
+    <!-- Example of displaying skills in tiny boxes -->
+
+    <div class="description_box">
+        <h2 class="description_title">Description</h2>
+        <p>Cartlens revolutionizes retail by using computer vision to monitor store shelves,
+            analyze basket contents, and understand customer behavior. It ensures real-time
+            inventory management, detects popular co-purchased items, and tracks customer
+            movement and dwell time. Leveraging technologies like Python, OpenCV, Roboflow,
+            OpenVINO, and Awiros SDK, Cartlens provides scalable insights and visual
+            analytics for efficient retail operations.</p>
+        <div class="carousel-container">
+            <div class="carousel my-carousel carousel--translate">
+                <input class="carousel__activator" type="radio" name="carousel3" id="K"
+                    checked="checked" />
+                <input class="carousel__activator" type="radio" name="carousel3" id="L" />
+                <input class="carousel__activator" type="radio" name="carousel3" id="M" />
+                <input class="carousel__activator" type="radio" name="carousel3" id="N" />
+                <input class="carousel__activator" type="radio" name="carousel3" id="O" />
+                <div class="carousel__controls" name="carousel3">
+                    <label class="carousel__control carousel__control--backward "
+                        name="carousel3" for="O"></label>
+                    <label class="carousel__control carousel__control--forward"
+                        name="carousel3" for="L"></label>
+                </div>
+                <div class="carousel__controls" name="carousel3">
+                    <label class="carousel__control carousel__control--backward"
+                        name="carousel3" for="K"></label>
+                    <label class="carousel__control carousel__control--forward"
+                        name="carousel3" for="M"></label>
+                </div>
+                <div class="carousel__controls" name="carousel3">
+                    <label class="carousel__control carousel__control--backward"
+                        name="carousel3" for="L"></label>
+                    <label class="carousel__control carousel__control--forward"
+                        name="carousel3" for="N"></label>
+                </div>
+                <div class="carousel__controls" name="carousel3">
+                    <label class="carousel__control carousel__control--backward"
+                        name="carousel3" for="M"></label>
+                    <label class="carousel__control carousel__control--forward"
+                        name="carousel3" for="O"></label>
+                </div>
+                <div class="carousel__controls" name="carousel3">
+                    <label class="carousel__control carousel__control--backward"
+                        name="carousel3" for="N"></label>
+                    <label class="carousel__control carousel__control--forward"
+                        name="carousel3" for="K"></label>
+                </div>
+                <div class="carousel__track" name="carousel3">
+                    <li class="carousel__slide" name="carousel3">
+
+                    </li>
+                    <li class="carousel__slide" name="carousel3">
+
+                    </li>
+                    <li class="carousel__slide" name="carousel3">
+
+                    </li>
+                    <li class="carousel__slide" name="carousel3">
+
+                    </li>
+                    <li class="carousel__slide" name="carousel3">
+
+                    </li>
+                </div>
+                <div class="carousel__indicators">
+                    <label class="carousel__indicator" for="K" name="carousel3"></label>
+                    <label class="carousel__indicator" for="L" name="carousel3"></label>
+                    <label class="carousel__indicator" for="M" name="carousel3"></label>
+                    <label class="carousel__indicator" for="N" name="carousel3"></label>
+                    <label class="carousel__indicator" for="O" name="carousel3"></label>
+                </div>
+            </div>
+        </div>
+        <div class="feature-section">
+            <!-- <img src="assests/img/6878986_18260.png" alt="" height="500px" width="100%"> -->
+            <div class="overlay">
+                <p><strong>Objective:</strong> Enhancing retail processes by leveraging
+                    computer vision to automate and optimize key aspects of store
+                    management. Cartlens aims to streamline operations through real-time
+                    monitoring of product availability, in-depth analysis of shopping
+                    behaviors, and actionable insights to improve customer experience and
+                    inventory management. By utilizing advanced technologies, Cartlens seeks
+                    to provide a comprehensive solution that minimizes manual effort,
+                    reduces stockouts, and enhances the overall efficiency of retail
+                    operations.</p>
+            </div>
+        </div>
+
+        <p class="margin_top"><strong>Use Cases:</strong></p>
+        <p class="margin_top"><strong>Shelf Monitoring:</strong></p>
+        <ul>
+            <li>Continuously monitor product levels on store shelves.</li>
+            <li>Alert staff when items are running low or out of stock, ensuring timely
+                restocking and minimizing lost sales opportunities.</li>
+        </ul>
+
+        <p class="margin_top"><strong>Basket Analysis</strong></p>
+        <ul>
+            <li>Detect and analyze the items in customers' baskets.</li>
+            <li>Identify frequently co-purchased items using the Apriori algorithm to
+                uncover shopping patterns and product associations.</li>
+            <li>Use these insights for targeted promotions and improved product placement.
+            </li>
+        </ul>
+
+        <p class="margin_top"><strong>Dwell-Time Analysis:</strong></p>
+
+        <ul>
+            <li>Track customer movement throughout the store using object tracking.</li>
+            <li>Analyze the time customers spend in different sections to understand foot
+                traffic patterns and areas of interest.</li>
+            <li>Use this data to optimize store layout and product placement based on
+                customer behavior.</li>
+        </ul>
+        <p class="margin_top"><strong>Heatmaps and Visualizations:</strong></p>
+
+        <ul>
+            <li>Generate heatmaps to visualize customer flow patterns within the store,
+                highlighting popular areas and bottlenecks.</li>
+            <li>Create bar charts to represent stock levels in inventory, providing a clear
+                view of product availability.</li>
+            <li>Use pie charts to capture and display customer dwell time distribution,
+                helping to identify sections where customers spend the most time.</li>
+        </ul>
+
+    </div>
+    <div class="skills-section">
+        <h2 class="techstack_title">Tech Stacks</h2>
+        <div class="skill-box">Python</div>
+        <div class="skill-box">OpenCv</div>
+        <div class="skill-box">Roboflow</div>
+        <div class="skill-box">OpenVino</div>
+        <div class="skill-box">Awiros SDK</div>
+    </div>
+
+</div>
+</body>
+</html>
